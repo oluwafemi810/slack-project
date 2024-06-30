@@ -1,0 +1,96 @@
+a{
+    color: purple;
+}
+p{
+    margin: 0;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: bold;
+}
+body{
+    margin: 0;
+}
+.header{
+    height: 80px;
+    background-color: rgb(143, 4, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+.dashboard-division,
+.career{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 10cm;
+}
+.dashboard,
+.careergoals{
+    width: 90%;
+    border-radius: 50px;
+    height: fit-content;
+    padding: 50px;
+    box-shadow: 0 0 20px rgba(228, 103, 228, 0.5);
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    align-items: center;
+}
+
+[data-testid="slackProfilePicture"]{
+    border-radius: 120px;
+}
+[data-testid="slackName"],
+[data-testid="slackEmail"]{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(143, 4, 143)
+}
+.available-links{
+    margin-top: 25px;
+    color: purple;
+    font-family: Poppins;
+}
+
+[data-testid="slackEmail"]{
+    font-size: 20px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+}
+
+[data-testid="hngLink"]:hover,
+[data-testid="keywordLink"]:hover,
+[data-testid="scrapeanywebLink"]:hover{
+    font-weight: bold;
+    width: fit-content;
+}
+
+.clock-container {
+    text-align: center;
+    color: rgb(143, 4, 143);
+}
+
+[data-testid="currentTimeUTC"] {
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Poppins;
+}
+
+[data-testid="currentDate"],
+[data-testid="currentDay"] {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Poppins;
+
+}
+
+.career{
+    margin-top: 10px;
+}
