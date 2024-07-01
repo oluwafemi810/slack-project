@@ -43,8 +43,7 @@ body{
     height: fit-content;
     padding: 50px;
     box-shadow: 0 0 20px rgba(228, 103, 228, 0.5);
-    display: grid;
-    grid-template-columns: 20% 1fr 20%;
+    display: flex;
     align-items: center;
 }
 
@@ -78,10 +77,18 @@ body{
     font-weight: bold;
     width: fit-content;
 }
+.information{
+    flex: 1;
+}
+
+.career{
+    margin-top: 50px;
+}
 
 .clock-container {
     text-align: center;
-    color: black
+    color: black;
+    width: 20%;
 }
 
 [data-testid="currentTimeUTC"] {
@@ -107,11 +114,15 @@ body{
     color: black;
     
 }
+.image-division{
+    width: 20%;
+}
 
 .goals{
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
-    align-items: justify;
+    text-align: justify;
+    line-height: 1cm;
 }
 
 @media only screen and (max-width: 767px) {
