@@ -1,5 +1,8 @@
+h3{
+    margin: 0;
+}
 a{
-    color: purple;
+    color: black;
 }
 p{
     margin: 0;
@@ -9,6 +12,7 @@ p{
 }
 body{
     margin: 0;
+    margin-bottom: 30px;
 }
 .header{
     height: 80px;
@@ -16,6 +20,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 .heading{
     font-size: 30px;
@@ -26,11 +33,11 @@ body{
 .career{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-    height: 10cm;
+    margin-top: 120px;
+
 }
 .dashboard,
-.careergoals{
+.career-goals{
     width: 90%;
     border-radius: 50px;
     height: fit-content;
@@ -48,11 +55,11 @@ body{
 [data-testid="slackEmail"]{
     font-size: 40px;
     font-weight: bold;
-    color: rgb(143, 4, 143)
+    color: black
 }
 .available-links{
     margin-top: 25px;
-    color: purple;
+    color: black;
     font-family: Poppins;
 }
 
@@ -74,7 +81,7 @@ body{
 
 .clock-container {
     text-align: center;
-    color: rgb(143, 4, 143);
+    color: black
 }
 
 [data-testid="currentTimeUTC"] {
@@ -91,6 +98,58 @@ body{
 
 }
 
-.career{
+.career-goals
+{
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    
+}
+
+.goals{
+    font-size: 20px;
     margin-top: 10px;
+    align-items: justify;
+}
+
+@media only screen and (max-width: 767px) {
+    .heading{
+        font-size: 20px;
+    }
+
+    .header{
+        height: 60px;
+    }
+    .dashboard-division{
+        margin-top: 20px;
+        
+    }
+    .dashboard, .career-goals{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        box-shadow: none
+    }
+    
+    [data-testid="slackName"]{
+    font-size: 22px;
+    }
+    [data-testid="slackEmail"]{
+        font-size: 13px;
+    }
+    .information{
+        margin-top: 20px;
+    }
+    .clock-container{
+        margin-top: 20px;
+    }
+    .goals{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .career{
+        margin-top: 0;
+    }
 }
