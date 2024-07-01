@@ -44,7 +44,9 @@ body{
     padding: 50px;
     box-shadow: 0 0 20px rgba(228, 103, 228, 0.5);
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    
 }
 
 [data-testid="slackProfilePicture"]{
@@ -78,6 +80,7 @@ body{
     width: fit-content;
 }
 .information{
+    margin-left: 30px;
     flex: 1;
 }
 
@@ -114,8 +117,9 @@ body{
     color: black;
     
 }
+
 .image-division{
-    width: 20%;
+    
 }
 
 .goals{
@@ -123,44 +127,64 @@ body{
     margin-top: 10px;
     text-align: justify;
     line-height: 1cm;
+    font-weight: 500;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 660px) {
     .heading{
         font-size: 20px;
     }
-
     .header{
         height: 60px;
     }
     .dashboard-division{
-        margin-top: 20px;
-        
+        margin-top: 80px;
     }
-    .dashboard, .career-goals{
+    .dashboard,
+    .career-goals{
+        width:90%;
+        border-radius: 25px;
+        height: fit-content;
+        padding: 5px;
+        box-shadow: 0 0 20px rgba(228, 103, 228, 0.5);
         display: flex;
         flex-direction: column;
-        width: fit-content;
-        box-shadow: none
+        align-items: center;
+    }
+    .information{
+        margin: 0;
+        margin-top: 15px;
+        
     }
     
     [data-testid="slackName"]{
-    font-size: 22px;
+        font-size: 25px;
+        font-weight: bold;
+        color: purple;
+        margin-bottom: 10px;
     }
     [data-testid="slackEmail"]{
-        font-size: 13px;
-    }
-    .information{
-        margin-top: 20px;
+        font-size: 16px;
+        color: purple;
     }
     .clock-container{
+        text-align: center;
+        color: purple;
+        width: 100%;
         margin-top: 20px;
     }
-    .goals{
-        font-size: 15px;
-        text-align: justify;
-    }
-    .career{
-        margin-top: 0;
-    }
+   p{
+    color: purple;
+   }
+   a{
+    color: purple;
+   }
+   .goals{
+    font-size: small;
+   }
+   .career-goals{
+    padding: 10px;
+   }
+   
+   
 }
